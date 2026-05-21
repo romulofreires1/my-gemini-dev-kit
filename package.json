@@ -1,0 +1,19 @@
+{
+  "name": "my-gemini-dev-kit",
+  "version": "1.0.0",
+  "description": "Conjunto de skills para o ciclo de desenvolvimento (PRD, TechSpec, Tasks, Bugfix, QA, Review).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/my-gemini-dev-kit.git"
+  },
+  "keywords": [
+    "gemini-cli",
+    "extension",
+    "skills",
+    "prd",
+    "techspec",
+    "qa"
+  ],
+  "author": "Romulo",
+  "license": "Apache-2.0"
+}
