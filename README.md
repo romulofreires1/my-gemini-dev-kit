@@ -17,7 +17,7 @@ Conjunto de skills para o Gemini CLI focadas no ciclo de desenvolvimento de soft
 Para instalar este plugin no seu Gemini CLI, use o comando:
 
 ```bash
-gemini extensions install <url-deste-repositorio>
+gemini extensions install https://github.com/romulofreires1/my-gemini-dev-kit.git
 ```
 
 Ou, se estiver desenvolvendo localmente:
