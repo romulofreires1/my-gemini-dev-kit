@@ -1,14 +1,14 @@
 {
-  "name": "my-gemini-dev-kit",
+  "name": "public-agent-skills",
   "version": "1.0.0",
-  "description": "Conjunto de skills para o ciclo de desenvolvimento (PRD, TechSpec, Tasks, Bugfix, QA, Review).",
+  "description": "Repositório público de skills agnósticas para o ecossistema .agents.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/my-gemini-dev-kit.git"
+    "url": "git+https://github.com/romulofreires1/public-agent-skills.git"
   },
   "keywords": [
-    "gemini-cli",
-    "extension",
+    "agent-skills",
+    "agnostic",
     "skills",
     "prd",
     "techspec",

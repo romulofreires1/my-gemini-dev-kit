@@ -1,4 +1,6 @@
-# myGeminiDevKit
+# Public Agent Skills
+
+Repositório público de skills agnósticas para o ecossistema .agents.
 
 Conjunto de skills para o Gemini CLI focadas no ciclo de desenvolvimento de software, desde a concepção (PRD) até a revisão final (Code Review).
 
@@ -17,7 +19,7 @@ Conjunto de skills para o Gemini CLI focadas no ciclo de desenvolvimento de soft
 Para instalar este plugin no seu Gemini CLI, use o comando:
 
 ```bash
-gemini extensions install https://github.com/romulofreires1/my-gemini-dev-kit.git
+gemini extensions install https://github.com/romulofreires1/public-agent-skills.git
 ```
 
 Ou, se estiver desenvolvendo localmente:

@@ -1,29 +1,44 @@
-# Gemini Skills Repository Instructions
+# Public Agent Skills
 
-This repository is dedicated to storing and managing Gemini CLI skills.
+Este projeto é um repositório central para o desenvolvimento de skills no padrão agnóstico `.agents`.
 
-## Workspace Conventions
+## Fluxo de Desenvolvimento
 
-- **Skill Location:** All skills MUST be placed in the `skills/` directory.
-- **Skill Structure:** Each skill MUST follow the standard structure:
-  - `skills/<skill-name>/SKILL.md` (required)
-  - `skills/<skill-name>/scripts/` (optional)
-  - `skills/<skill-name>/references/` (optional)
-  - `skills/<skill-name>/assets/` (optional)
-- **Naming:** Skill folders should use hyphen-case (e.g., `my-awesome-skill`).
+As skills são desenvolvidas na pasta `skills/`. Cada subpasta segue a anatomia oficial:
+- `SKILL.md`: Instruções e metadados.
+- `scripts/`: Scripts determinísticos.
+- `assets/`: Templates e arquivos estáticos.
+- `references/`: Documentação de suporte.
 
-## Workflows
+## Instalação (Link para Desenvolvimento)
 
-### Creating a New Skill
+Para instalar as skills deste projeto no diretório global do agente (`~/.agents/skills`), utilize o script de link:
 
-When asked to create a new skill:
-1. Use the `skill-creator` tool if available, or manually create the directory structure.
-2. Ensure `SKILL.md` has the required YAML frontmatter (name and description).
-3. Follow the progressive disclosure principle: keep `SKILL.md` lean and use `references/` for detailed info.
+```bash
+./scripts/link-skills.sh
+```
 
-### Updating a Skill
+Isso criará links simbólicos para todas as skills em `skills/*`, permitindo que você edite o código aqui e veja as mudanças instantaneamente no Gemini CLI.
 
-1. Read the existing `SKILL.md` and associated resources.
-2. Apply changes surgically.
-3. Validate the skill using `validate_skill.cjs` if available.
+## Skills Disponíveis
 
+### create-prd
+Cria Documento de Requisitos do Produto (PRD) a partir de uma solicitação de feature.
+
+### create-techspec
+Gera especificação técnica (TechSpec) a partir de um PRD existente.
+
+### create-tasks
+Gera lista de tarefas detalhadas a partir de PRD e TechSpec.
+
+### execute-task
+Executa a próxima tarefa de desenvolvimento disponível.
+
+### execute-bugfix
+Corrige todos os bugs listados em bugs.md e cria testes de regressão.
+
+### execute-qa
+Valida a implementação contra PRD, TechSpec e Tasks.
+
+### execute-review
+Realiza code review estruturado da implementação atual.
