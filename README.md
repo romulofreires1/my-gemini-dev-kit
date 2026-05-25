@@ -16,25 +16,20 @@ Conjunto de skills para o Gemini CLI focadas no ciclo de desenvolvimento de soft
 
 ## Instalação
 
-Para instalar este plugin no seu Gemini CLI, use o comando:
+Para disponibilizar as skills no diretório global de skills do `.agents` (`~/.agents/skills`), utilize o script de vinculação:
 
 ```bash
-gemini extensions install https://github.com/romulofreires1/public-agent-skills.git
-```
-
-Ou, se estiver desenvolvendo localmente:
-
-```bash
-gemini extensions link .
+chmod +x scripts/link-skills.sh
+./scripts/link-skills.sh
 ```
 
 ## Estrutura
 
 - `skills/`: Contém as definições de cada skill (`SKILL.md`).
-- `gemini-extension.json`: Manifesto da extensão para o Gemini CLI.
+- `scripts/`: Scripts utilitários (ex: `link-skills.sh`).
 - `package.json`: Metadados do pacote.
 
 ## Requisitos
 
-- [Gemini CLI](https://geminicli.com) instalado.
+- `.agents` ou compatível.
 - (Opcional) MCP Playwright para as skills de QA.
